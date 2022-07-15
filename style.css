@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    /* height: 1109px; */
+    background: linear-gradient(#ccd9e1, #ffffff, #ffffff, #ffffff, #c0ccd8);
+    padding: 30px 20px;
+}
+
+header {
+    width: 100%;
+    /* height: 200px; */
+}
+
+header img,
+header div {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+header div {
+    margin: 0;
+    width: calc(100% - 300px);
+}
+
+header div h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: #2d4767;
+    letter-spacing: 2px;
+}
+
+.job_title {
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+.profile_img {
+    width: 250px;
+    height: 200px;
+}
+
+nav {
+    display: block;
+    margin-top: 30px;
+    border-top: 4px solid #2d4767;
+    width: 100%;
+    height: 80px;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: .95rem;
+}
+
+nav ul li:first-of-type::before {
+    content: '';
+}
+
+nav ul li::before,
+.built_paragraph::before {
+    content: '\25cf\a0';
+}
+
+.about_self {
+    margin-top: 20px;
+    background-color: #eff0f2;
+    padding: 20px 40px;
+    color: #49423e;
+}
+
+.about_self h3,
+.about_projects div h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.about_self h3,
+.about_self p {
+    margin-bottom: 30px;
+}
+
+.about_self p {
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+.about_projects {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.about_projects div {
+    width: 49%;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.tech_stack_img {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.about_projects div h3 {
+    margin-bottom: 20px;
+}
+
+.about_projects .my_projects {
+    background: linear-gradient(#e9e9e9, #ffffff, #fafcfb, #f2f4f3, #a4a4a4, #a4a4a4);
+    padding: 20px;
+}
+
+article h4 {
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+article p {
+    margin-top: 10px;
+}
+
+.tech_photos {
+    text-align: center;
+}
+
+footer ul {
+    text-align: center;
+    padding-top: 10px;
+    vertical-align: middle;
+}
+
+footer ul li,
+ul li span,
+footer ul li img {
+    display: inline-block;
+    text-decoration: underline;
+    font-style: italic;
+    vertical-align: bottom;
+}
+
+footer ul li {
+    margin: 10px;
+}
+
+.contact_img {
+    width: 30px;
+    height: 30px;
+}
+
+.col {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media only screen and (max-width:1024px) {
+    .tech_stack_img {
+        width: 20%;
+        height: auto;
+    }
+    header {
+        text-align: center;
+    }
+    header div h1 {
+        font-size: 3rem;
+    }
+    .md-12 {
+        width: 100%;
+    }
+    .my_projects p {
+        font-size: .85rem;
+    }
+    .my_projects h4 {
+        font-size: .9rem;
+    }
+    .about_projects div h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .about_projects div {
+        width: 100%;
+    }
+    .my_projects p {
+        font-size: 1rem;
+    }
+    .my_projects h4 {
+        font-size: 1rem;
+    }
+    .about_projects div h3 {
+        font-size: 2rem;
+    }
+}
